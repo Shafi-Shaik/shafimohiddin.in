@@ -1,6 +1,54 @@
+:root {
+	--Pfont: "Baloo Bhai 2", "cursive";
+	--Sfont: "Ubuntu", "Sans-serif";
+	--Pcolor: rgb(138, 43, 226);
+	--Scolor: rgb(240, 39, 140);
+	--Tcolor: rgb(196, 201, 26);
+}
+
 * {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	font-size:16px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "ubuntu", "Times New Roman", sans-serif;
+}
+
+body {
+	background-color: rgb(223, 174, 146);
+	max-width: 100vw;
+}
+#container {
+	display: grid;
+	grid-template-areas:
+		" main1 main1 aside" "main2 main2 aside"
+		" main3 main3 aside"
+		"footer footer footer";
+}
+p {
+	line-height: 1.2rem;
+	margin: 1rem;
+}
+#aside {
+	grid-area: aside;
+	background-color: rgb(62, 199, 176);
+	border: 2px solid black;
+}
+
+#main1 {
+	grid-area: main1;
+	background-color: rgb(223, 174, 146);
+	margin-bottom: 5px;
+	/* border: 2px solid black; */
+}
+#main2 {
+	grid-area: main2;
+	background-color: rgb(223, 174, 146);
+	/* border: 2px solid black; */
+}
+#main3 {
+	grid-area: main3;
+	background-color: rgb(223, 174, 146);
+}
+#footer {
+	grid-area: footer;
 }
